@@ -1,166 +1,127 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <title>iPhone - Apple</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site construído na aula da disciplina de Introdução à Web">
-    <meta name="keywords" content="apple, iphone, smartphone">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="shortcut icon" href="imagens/logo_apple_preto.png" type="image/x-icon">
-
-    <link rel="stylesheet" href="plugins/jquery.bxslider.css">
-    <link rel="stylesheet" href="plugins/magnific-popup.css">
-    <script src="plugins/jquery.min.js"></script>
-    <script src="plugins/jquery.bxslider.min.js"></script>
-    <script src="plugins/jquery.magnific-popup.js"></script>
-
-  <script>
-    $(document).ready(function(){
-      $('.slider').bxSlider({
-          mode: 'horizontal',
-          // captions: true,
-          auto: true,
-          pager: true,
-          //controls: true
-      });
-
-      $('#galeria-fotos').magnificPopup({
-		delegate: 'a',
-		type: 'image',
-		closeOnContentClick: false,
-		closeBtnInside: false,
-		mainClass: 'mfp-with-zoom mfp-img-mobile',
-		image: {
-			verticalFit: true,
-			titleSrc: function(item) {
-				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-			}
-		},
-		gallery: {
-			enabled: true
-		},
-		zoom: {
-			enabled: true,
-			duration: 300, // don't foget to change the duration also in CSS
-			opener: function(element) {
-				return element.find('img');
-			}
-		}
-		
-	});
-
-    });
-  </script>
+    <title>Top 15</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <header id="cabecalho">
-        <div class="container">
-            <img src="imagens/logo_apple_branco.png" id="logo">
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#versoes">Modelos</a></li>
-                    <li><a href="#fotos">Fotos</a></li>
-                    <li><a href="#video">Vídeo</a></li>
-                    <li><a href="https://www.apple.com/br/iphone/" target="_blank">Site oficial</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section id="banners">
-        <div class="container">
-            <ul class="slider">
-                <li><img src="imagens/banners/banner_01.jpg"></li>
-                <li><img src="imagens/banners/banner_02.jpg"></li>
-                <li><img src="imagens/banners/banner_03.jpg"></li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="versoes">
-        <div class="container">
-            <h2 class="titulo-secao">Qual é o iPhone ideal para você?</h2>
-            <div id="modelos">
-                <div>
-                    <img src="imagens/iphones/iphone_13_pro.jpg">
-                    <h3>iPhone 13 Pro</h3>
-                    <ul>
-                        <li>Tela OLED sem bordas com ProMotion de 6,7 pol. ou 6,1 pol. </li>
-                        <li>Sistema de câmera Pro. Teleobjetiva, grande-angular e ultra-angular</li>
-                        <li>Chip A15 Bionic</li>
-                    </ul>
-                    <a href="" class="but-comprar">Comprar</a>
-                    <a href="" class="but-saiba-mais">Saiba mais</a>
+    <main>
+        <header class="nba-header">
+            <div class="icon">
+                <img src="./imagens/logo-nba.png" alt="icon-nba">
+            </div>
+            <div class="social-networks">
+                <div class="icons">
+                    <a href="https://www.instagram.com/nba/">
+                        <img src="./icons/instagram-icon.png" alt="instagram-icon">
+                    </a>
                 </div>
-                <div>
-                    <img src="imagens/iphones/iphone_13.jpg">
-                    <h3>iPhone 13</h3>
-                    <ul>
-                        <li>Tela OLED sem bordas de 6,1 pol. ou 5,4 pol.</li>
-                        <li>Sistema avançado de câmera dupla</li>
-                        <li>Chip A15 Bionic</li>
-                    </ul>
-                    <a href="" class="but-comprar">Comprar</a>
-                    <a href="" class="but-saiba-mais">Saiba mais</a>
-                </div>
-                <div>
-                    <img src="imagens/iphones/iphone_12.jpg">
-                    <h3>iPhone 12</h3>
-                    <ul>
-                        <li>Tela OLED sem bordas de 6,1 pol. ou 5,4 pol.</li>
-                        <li>Sistema de câmera dupla</li>
-                        <li>Chip A15 Bionic</li>
-                    </ul>
-                    <a href="" class="but-comprar">Comprar</a>
-                    <a href="" class="but-saiba-mais">Saiba mais</a>
-                </div>
-                <div>
-                    <img src="imagens/iphones/iphone_se.jpg">
-                    <h3>iPhone SE (3ª geração)</h3>
-                    <ul>
-                        <li>Tela LCD</li>
-                        <li>Sistema de câmera única</li>
-                        <li>Chip A15 Bionic</li>
-                    </ul>
-                    <a href="" class="but-comprar">Comprar</a>
-                    <a href="" class="but-saiba-mais">Saiba mais</a>
+                <div class="icons">
+                    <a href="https://twitter.com/nba">
+                        <img src="./icons/twitter-icon.png" alt="twitter-icon">
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </header>
 
-    <section id="fotos">
-        <div class="container">
-            <h2 class="titulo-secao">Surprenda com o poder da camêra de um iPhone</h2>
-            <div id="galeria-fotos">
-                <a href="imagens/fotos/fotosg/foto01.jpg" title="Foto 01"><img src="imagens/fotos/fotosp/foto01.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto02.jpg" title="Foto 02"><img src="imagens/fotos/fotosp/foto02.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto03.jpg" title="Foto 03"><img src="imagens/fotos/fotosp/foto03.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto04.jpg" title="Foto 04"><img src="imagens/fotos/fotosp/foto04.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto05.jpg" title="Foto 05"><img src="imagens/fotos/fotosp/foto05.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto06.jpg" title="Foto 06"><img src="imagens/fotos/fotosp/foto06.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto07.jpg" title="Foto 07"><img src="imagens/fotos/fotosp/foto07.jpg" alt=""></a>
-                <a href="imagens/fotos/fotosg/foto08.jpg" title="Foto 08"><img src="imagens/fotos/fotosp/foto08.jpg" alt=""></a>
+        <header class="navbar">
+            <div class="navbar-item">
+                <a href="index.html">
+                    <img src="./icons/court-icon.png" alt="court-icon">
+                    <h2>história</h2>
+                </a>
             </div>
-        </div>
-    </section>
+            <div class="navbar-item">
+                <a href="./paginas-internas/regras.html">
+                    <img src="./icons/rules-icon.png" alt="whistle-icon">
+                    <h2>regras</h2>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="./paginas-internas/times.html">
+                    <img src="./icons/basketball-icon.png" alt="basketball-icon">
+                    <h2>times</h2>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="./paginas-internas/top15.html">
+                    <img src="./icons/players-icon.png" alt="ranking-icon">
+                    <h2>top 15</h2>
+                </a>
+            </div>
+            <div class="navbar-item">
+                <a href="./paginas-internas/all-stars.html">
+                    <img src="./icons/stars-icon.png" alt="star-players-icon">
+                    <h2>all star</h2>
+                </a>
+            </div>
+        </header>
 
-    <section id="video">
-        <div class="container">
-            <h2 class="titulo-secao">Apresentamos o iPhone 13</h2>
-            <iframe src="https://www.youtube.com/embed/2qjQe4odGLQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-    </section>
+        <section class="content">
+
+            <div class="content-regras">
+                <div class="box-par historia">
+                    <div class="title-par title-historia">
+                        <h3>História do Basquete</h3>
+                    </div>
+                    <p>O basquetebol foi criado em 1891 pelo professor de Educação Física canadense James Naismith
+                        (1861-1940).Na época, ele trabalhava na Associação Cristã de Moços de Springfield,
+                        Massachusetts, nos Estados Unidos. O esporte surgiu como uma alternativa ao inverno rigoroso da
+                        região, em detrimento dos outros praticados ao ar livre como o basebol e o futebol.
+
+                        Além disso, a ideia original era criar um esporte menos violento que o futebol americano. Aliado
+                        a isso, o professor criador pretendia integrar os alunos nas aulas de educação física e
+                        estimular a coletividade dos grupos.
+
+                        O primeiro jogo oficial de basquete foi disputado em 1892, e teve uma plateia aproximada de 200
+                        pessoas. Nesse mesmo ano, as mulheres começaram a praticar essa modalidade. Já a primeira
+                        partida feminina ocorreu em 1896.
+
+                        A modalidade feminina foi inserida pela professora de educação física Senda Berenson
+                        (1868-1954). Foi também em 1896 que o esporte chegou ao Brasil, trazido pelo norte-americano
+                        Augusto Louis.
+
+                        Curioso notar que no início o esporte era praticado com uma bola semelhante à de futebol.
+                        Somente em 1984 que a bola de basquete, tal qual conhecemos hoje, foi desenvolvida por uma
+                        empresa de Massachusetts. Somente mais tarde que o basquetebol passou a figurar nas Olimpíadas.
+                        O primeiro jogo de basquete olímpico aconteceu nos Jogos Olímpicos de Verão de 1936, em Berlim.
+
+                        Esse momento representou uma grande conquista para a disseminação do esporte pelo mundo. Hoje,
+                        cerca de 200 países são filiados à FIBA, Federação Internacional de Basquetebol.
+
+                        Essa organização foi fundada em 1932 e é responsável por organizar os eventos relacionados com o
+                        basquete em nível mundial. Atualmente, sua sede está localizada em Genebra, na Suíça.</p>
+                </div>
+            </div>
+
+            <section id="videos">
+                <div class="cont-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/T7_q5bwtLuU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/TrqpKTU8T8o"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+            </section>
+        </section>
+    </main>
 
     <footer id="rodape">
-        <p>Site construído na aula da disciplina de Introdução à Tecnologia à Tecnologia Web do 1º périodo do curso de Sistema de Informação do UniRios</p>
-        <p><a href="http://www.unirios.edu.br">UniRios - Centro Universitário do Rio São Francisco</a></p>
+        <div class="container-rodape">
+            <span>Site desenvolvido na disciplina de Introdução à Tecnologia Web <br>
+                do 1º período do curso de Sistemas de Informação do UniRios.
+                <br> Autor: Davi Oliveira</span>
+        </div>
     </footer>
 </body>
 

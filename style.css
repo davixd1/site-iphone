@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans&family=Roboto+Slab:wght@300;400;600&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Roboto Slab;
+}
+
+/* INÍCIO HEADER */
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(58, 127, 156);
+    padding: 10px;
+}
+
+header .icon {
+    width: 15%;
+    height: auto;
+    margin-right: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .icon img {
+    width: 100%;
+    height: auto;
+}
+
+
+header .social-networks {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+header .social-networks .icons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+header .social-networks .icons img {
+    width: 80%;
+}
+
+/* FIM HEADER */
+
+/* COMEÇO SLIDER */
+
+main .slider {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+main .slider div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .slider div img {
+    width: 100%;
+    height: 70vh;
+}
+
+/* FIM SLIDER */
+
+/* COMEÇO NAVBAR */
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+main .navbar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(206, 206, 206);
+}
+
+main .navbar .navbar-item a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+main .navbar .navbar-item a h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+main .navbar .navbar-item img {
+    width: 30%;
+    height: auto;
+}
+
+/* FIM NAVBAR */
+
+/* Início Content */
+
+main .content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+
+main .content .container-sub-title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+main .content .sub-title {
+    width: 20%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.587);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+main .content .sub-title h2 {
+    text-transform: uppercase;
+    color: rgb(4, 4, 4);
+    font-size: 1.7rem;
+}
+
+
+main .content .teams {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 15fr);
+    gap: 35px;
+    padding: 50px 50px;
+}
+
+main .content .teams-oeste {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(6, 12fr);
+    row-gap: 80px;
+    column-gap: 40px;
+    padding: 80px 50px;
+}
+
+main .content .team {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .team h2{
+    text-align: center;
+}
+
+main .content .team:hover{
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    border-radius: 15px;
+    color: rgb(42, 42, 42);
+}
+
+main .team-logo {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .team-logo img {
+    width: 100%;
+    height: auto;
+}
+/* Fim Content */
+
+/* Início Regras */
+.content-regras{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.box-par{
+    width: 50%;
+    height: auto;
+    background-color: rgba(30, 70, 70, 0.274);
+    padding: 10px;
+    border: 3px solid rgb(46, 88, 88);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.historia{
+    width: 50%;
+    height: auto;
+    background-color: rgba(162, 171, 171, 0.7);
+    padding: 10px;
+    border: 3px solid rgb(46, 88, 88);
+    border-radius: 10px;
+}
+
+.box-par .title-par{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border-radius: 15px 15px 0 0;
+    background-color: rgba(30, 70, 70, 0.746);
+    font-size: 1.2rem;
+    color: white;
+}
+
+.box-par p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: rgb(13, 29, 29);
+}
+
+.box-par li{
+    margin-left: 60px;
+    color: rgb(13, 29, 29);
+}
+
+.box-impar{
+    width: 50%;
+    height: auto;
+    background-color: rgb(30, 70, 70);
+    padding: 10px;
+    border: 3px solid rgba(30, 70, 70, 0.274);
+    border-radius: 10px;
+}
+
+.box-impar .title-impar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    border-radius: 15px 15px 0 0;
+    background-color: rgb(251, 251, 251);
+    font-size: 1.2rem;
+    color: rgb(30, 70, 70);
+}
+
+.box-impar p{
+    width: 100%;
+    margin-top: 10px;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.box-impar li{
+    margin-left: 60px;
+    color: white;
+
+}
+
+/* Fim Regras */
+
+/* Início Vídeos */
+
+
+
+   
+#videos{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#videos .container-videos{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.cont-video{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+/* Fim Vídeos */
+
+/* Início Rodapé */
+
+#rodape{
+    background-color: #000;
+    padding: 50px;
+}
+
+#rodape span{
+    display: block;
+    text-align: center;
+    color: #999;
+}
+
+
+/* Fim Rodapé */
