@@ -1,4 +1,4 @@
-https://davixd1.github.io/site-iphone/
+https://davixd1.github.io/site-nba-projeto/
 
 Site desenvolvido na aula de Introdução à Tecnologia Web
 
